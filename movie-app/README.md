@@ -1,16 +1,51 @@
-# React + Vite
+# 🎬 Movie App - MERN Stack (Firebase Edition)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, responsive movie discovery platform built with **React**, **Redux Toolkit**, and **Tailwind CSS**, featuring real-time data from **TMDB API** and secure authentication via **Firebase**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features Implemented
 
-## React Compiler
+* **Secure Authentication**: Google OAuth and Email/Password login integration using **Firebase Auth**.
+* **Dynamic Search**: Real-time movie search functionality with instant UI updates.
+* **Infinite Scroll**: Seamless browsing experience using the **Intersection Observer API** to load more movies as you scroll.
+* **Personal Watchlist**: Users can save their favorite movies to a private watchlist synced with **Cloud Firestore**.
+* **Movie Details & Trailers**: Dedicated details page for every movie featuring overviews, ratings, and embedded YouTube trailers.
+* **Responsive Dark Mode**: Full support for Dark/Light modes with a custom theme engine and glassmorphism UI elements.
+* **Smooth UX**: Includes a "Back to Top" floating button and loading skeletons for a premium feel.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend**: React.js (Vite), Tailwind CSS, Framer Motion (for animations).
+* **State Management**: Redux Toolkit (Async Thunks).
+* **Backend/Database**: Firebase (Authentication & Firestore).
+* **API**: TMDB (The Movie Database) API.
+* **Icons & Toasts**: React Icons, React Hot Toast.
+* **Routing**: React Router DOM v6.
+
+---
+
+## 📦 Project Setup Steps
+
+Follow these steps to run the project locally on your machine:
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+cd your-repo-name
+
+Install Dependences
+npm install
+
+VITE_TMDB_API_KEY=your_tmdb_api_key_here
+VITE_FIREBASE_API_KEY=your_firebase_key
+VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+
+
+npm run dev
